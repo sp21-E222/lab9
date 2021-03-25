@@ -30,7 +30,7 @@ top_level (usually a repo i.e. top_level.git)
   | |- __init__.py
   | |- test.py
   |- setup.py
-  |- sub3
+  |- .gitignore
 ```
 
 
