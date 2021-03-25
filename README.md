@@ -24,13 +24,13 @@ For clarity please use dir names that are suitable for you, I have created these
 Remember the -i tag allows us to use the container interactively and the -t allows us to name the container so we can use the tag name versus the Docker naming convention, which is much longer. 
 
 # Python packaging 
-
+```
 root
   |- sub1
   | |- sub1a
   | |- sub1b
   |- sub2
   |- sub3
-
+```
 
 
