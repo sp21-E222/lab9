@@ -23,6 +23,16 @@ For clarity please use dir names that are suitable for you, I have created these
 
 Remember the -i tag allows us to use the container interactively and the -t allows us to name the container so we can use the tag name versus the Docker naming convention, which is much longer. 
 
+The following two commands will; first build you container and give it a name; then it will run the contianer interactively. 
+
+```
+docker build --pull -t pkg_demo .
+```
+
+```
+docker run -p 8080:8080 -v /Users/tbalson/github/222/sp21/scratch/docker_volumes:/packages -it pkg_demo
+```
+
 # Python packaging (minimal example)
 ```
 top_level (usually a repo i.e. top_level.git)
