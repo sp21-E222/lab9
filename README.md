@@ -23,12 +23,13 @@ For clarity please use dir names that are suitable for you, I have created these
 
 Remember the -i tag allows us to use the container interactively and the -t allows us to name the container so we can use the tag name versus the Docker naming convention, which is much longer. 
 
-# Python packaging 
+# Python packaging (minimal example)
 ```
 top_level (usually a repo i.e. top_level.git)
   |- module_name (this is the actual python module)
   | |- __init__.py
-  | |- test.py
+  | |- text.py
+  | |- sum.py
   |- setup.py
   |- .gitignore
 ```
