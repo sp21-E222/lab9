@@ -1,3 +1,24 @@
 # lab9
 
 Packaging your ML application:  Proper use of pip freeze, application transferability, application directory structure, testing the installation of your application and project examples.
+
+# Connecting a Docker container to a local dir
+
+In order to make Docker a full blown development environment we need to have the ability to save our work so it exists when the container is no longer running. Here we will showcase how to create a local directory and map it to the container so that you can save things to that directory from the container and from the local volume. Think of this as a two way street. 
+
+## Introduce the -v 
+
+```
+-v /your/path/to/the/dir/you/created/locally:/working_dir_in_the_container
+```
+
+The -v is what creates the bridge between the container and your local storage space, in this case: /your/path/to/the/dir/you/created/locally , the /working_dir_in_the_container is most easily set from within the Dockerfile like so:
+
+```
+WORKDIR working_dir_in_the_container/
+```
+
+
+
+
+
