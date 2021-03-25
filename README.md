@@ -44,4 +44,13 @@ top_level (usually a repo i.e. top_level.git)
   |- .gitignore
 ```
 
+Once we have this directory structure we can go to the top_level and use pip to install locally. 
+
+```
+cd ~/top_level
+pip install .
+>>> import module_name
+>>> print(module_name.text())
+```
+
 
