@@ -30,7 +30,7 @@ docker build --pull -t pkg_demo .
 ```
 
 ```
-docker run -p 8080:8080 -v /Users/tbalson/github/222/sp21/scratch/docker_volumes:/packages -it pkg_demo
+docker run -p 8080:8080 -v /your/path/to/the/dir/you/created/locally:/working_dir_in_the_container -it pkg_demo
 ```
 
 # Python packaging (minimal example)
