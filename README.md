@@ -25,11 +25,11 @@ Remember the -i tag allows us to use the container interactively and the -t allo
 
 # Python packaging 
 ```
-root
-  |- sub1
-  | |- sub1a
-  | |- sub1b
-  |- sub2
+top_level (usually a repo i.e. top_level.git)
+  |- module_name (this is the actual python module)
+  | |- __init__.py
+  | |- test.py
+  |- setup.py
   |- sub3
 ```
 
