@@ -1,3 +1,5 @@
+# Usefull Commands
+
 ## Python requirements gathering
 
 See all the packages installed
@@ -17,7 +19,7 @@ pip freeze > requirements.txt
 
 ## Usefull Docker commands
 
-#### Running docker containers
+### Running docker containers
 Build a docker image and give the image the name <tag_name>
 ```bash
 docker build --pull -t <tag_name> .
@@ -38,7 +40,7 @@ Run the container interactively with a mounted volume:
 docker run -p 8080:8080 -v <your_local_repo>:<path_in_container> -it <tag_name>
 ```
 
-#### Maintaining containers
+### Maintaining containers
 Check all the running containers:
 ```bash
 docker ps
@@ -47,4 +49,9 @@ docker ps
 Stop a running container:
 ```bash
 docker stop <container_id>
+```
+
+## Run your code inside the container
+```bash
+python server.py
 ```
